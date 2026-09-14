@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1200" viewBox="0 0 1000 1200">
+  <style>
+    .box{fill:#f6f9ff;stroke:#1f4e79;stroke-width:3;}
+    .small{font:14px sans-serif; fill:#012a4a;}
+    .title{font:18px sans-serif; fill:#012a4a; font-weight:700;}
+    .stream{font:12px monospace; fill:#000;}
+    .arrow{fill:none; stroke:#444; stroke-width:3; marker-end:url(#arrowhead);}
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#444"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="30" class="title">Pilot PFD — Continuous Biphasic Solid‑Acid Process (1 t/d biomass)</text>
+
+  <!-- Left: feed -->
+  <rect x="30" y="60" width="220" height="80" class="box"/>
+  <text x="40" y="95" class="small">U-01 Biomass Receiving</text>
+  <text x="40" y="115" class="small">Baled / storage</text>
+
+  <rect x="30" y="160" width="220" height="80" class="box"/>
+  <text x="40" y="195" class="small">U-02 Size Reduction</text>
+  <text x="40" y="215" class="small">Hammer mill / shredder</text>
+
+  <rect x="30" y="260" width="220" height="100" class="box"/>
+  <text x="40" y="295" class="small">U-03 Pretreatment / Slurry Prep</text>
+  <text x="40" y="315" class="small">Steam explosion/dilute acid</text>
+
+  <!-- water arrow -->
+  <line x1="160" y1="360" x2="160" y2="410" class="arrow"/>
+  <text x="170" y="385" class="stream">S-02 Water (9,000 kg/d)</text>
+
+  <!-- Mix + Solvent -->
+  <rect x="300" y="300" width="240" height="100" class="box"/>
+  <text x="315" y="330" class="small">U-04 Slurry Mixer / Solvent Mixer</text>
+  <text x="315" y="350" class="small">Make slurry & add biphasic solvent (GVL)</text>
+
+  <rect x="300" y="420" width="240" height="100" class="box"/>
+  <text x="315" y="450" class="small">U-05 Feed Heater / Pressurizer</text>
+  <text x="315" y="470" class="small">Heat to 180–200 °C; pressurize</text>
+
+  <!-- Reactor -->
+  <rect x="600" y="300" width="320" height="180" class="box"/>
+  <text x="620" y="330" class="small">U-06 Continuous Reactor</text>
+  <text x="620" y="350" class="small">Packed‑bed solid acid (sulfonated carbon / HPA)</text>
+  <text x="620" y="370" class="small">190 °C, ~12 bar, t_res ≈ 30 min</text>
+
+  <!-- Separator -->
+  <rect x="600" y="510" width="320" height="120" class="box"/>
+  <text x="620" y="540" class="small">U-07 Hot Phase Separator</text>
+  <text x="620" y="560" class="small">Decanter / centrifuge → organic / aqueous</text>
+
+  <!-- Organic path -->
+  <rect x="600" y="660" width="320" height="120" class="box"/>
+  <text x="620" y="690" class="small">U-08 Solvent Recovery</text>
+  <text x="620" y="710" class="small">Distillation / strip → recycle GVL</text>
+
+  <rect x="600" y="800" width="320" height="120" class="box"/>
+  <text x="620" y="830" class="small">U-09 Product Polishing</text>
+  <text x="620" y="850" class="small">LA concentration / filtration → storage</text>
+
+  <!-- Aqueous path -->
+  <rect x="300" y="660" width="240" height="120" class="box"/>
+  <text x="315" y="690" class="small">U-10 Aqueous Treatment</text>
+  <text x="315" y="710" class="small">Recover formic acid / neutralize & treat</text>
+
+  <rect x="300" y="810" width="240" height="80" class="box"/>
+  <text x="315" y="845" class="small">U-11 Wastewater Treatment</text>
+
+  <!-- Catalyst regen -->
+  <rect x="30" y="420" width="220" height="140" class="box"/>
+  <text x="40" y="455" class="small">U-12 Catalyst Regeneration</text>
+  <text x="40" y="475" class="small">Solvent wash / thermal oxidation</text>
+
+  <!-- arrows -->
+  <line x1="250" y1="200" x2="300" y2="310" class="arrow"/>
+  <text x="260" y="230" class="stream">S-01 Biomass solids (1,000 kg/d)</text>
+
+  <line x1="250" y1="300" x2="300" y2="340" class="arrow"/>
+  <text x="260" y="330" class="stream">S-03 Pretreated slurry (10,000 kg/d)</text>
+
+  <line x1="540" y1="350" x2="600" y2="350" class="arrow"/>
+  <text x="460" y="320" class="stream">S-04 Mixed feed (slurry + solvent) = 19,000 kg/d</text>
+
+  <line x1="920" y1="390" x2="980" y2="390" class="arrow"/>
+  <text x="935" y="360" class="stream">Reactor outlet hot stream</text>
+
+  <line x1="760" y1="630" x2="760" y2="660" class="arrow"/>
+  <text x="700" y="625" class="stream">S-05 Organic phase (LA + solvent)</text>
+  <line x="740" y1="630" x2="520" y2="545" class="arrow"/>
+
+  <line x1="740" y1="630" x2="740" y2="770" class="arrow"/>
+  <text x="660" y="765" class="stream">S-06 Recovered solvent recycle (~9,000 kg/d) + makeup</text>
+
+  <line x1="520" y1="545" x2="420" y2="545" class="arrow"/>
+  <text x="430" y="525" class="stream">S-07 Aqueous phase (water + formic acid + soluble organics)</text>
+
+  <line x1="250" y1="480" x2="80" y2="480" class="arrow"/>
+  <text x="110" y="460" class="stream">S-08 Catalyst spent / humin solids (~200 kg/d)</text>
+
+  <line x1="420" y1="830" x2="300" y2="830" class="arrow"/>
+  <text x="340" y="800" class="stream">S-09 Treated wastewater</text>
+
+  <line x1="760" y1="930" x2="760" y2="1000" class="arrow"/>
+  <text x="680" y="950" class="stream">S-10 Levulinic acid product (~181 kg/d)</text>
+
+  <!-- legend -->
+  <rect x="30" y="980" width="940" height="180" fill="#fff" stroke="#1f4e79" stroke-width="2"/>
+  <text x="50" y="1010" class="title">Stream table (selected)</text>
+  <text x="50" y="1035" class="small">S-01 Biomass feed (dry): 1,000 kg/day (assumed cellulose 40 wt%)</text>
+  <text x="50" y="1055" class="small">S-02 Process water for slurry: 9,000 kg/day (solids ≈10 wt%)</text>
+  <text x="50" y="1075" class="small">S-03 Pretreated slurry (mass): 10,000 kg/day</text>
+  <text x="50" y="1095" class="small">S-04 Solvent (GVL) added & mixed: 9,000 kg/day (recycled, makeup ~90 kg/d)</text>
+  <text x="50" y="1115" class="small">S-05 Organic phase (LA + solvent): contains LA ≈ 181 kg/d + solvent (~9,000 kg/d)</text>
+  <text x="50" y="1135" class="small">S-07 Aqueous phase: contains formic acid ≈ 72 kg/d + water + dissolved organics</text>
+  <text x="50" y="1155" class="small">S-08 Humin / solids to regen: ~200 kg/d (estimate)</text>
+  <text x="50" y="1175" class="small">Notes: assumptions listed in report. Values are pilot estimates for design & mass balance.</text>
+</svg>
